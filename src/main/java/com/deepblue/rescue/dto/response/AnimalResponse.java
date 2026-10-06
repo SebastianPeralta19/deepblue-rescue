@@ -1,4 +1,16 @@
 package com.deepblue.rescue.dto.response;
 
-public class AnimalResponse {
+import com.deepblue.rescue.domain.AnimalSex;
+import com.deepblue.rescue.domain.RescueStatus;
+
+public record AnimalResponse(
+        Long id,
+        String animalCode,
+        String commonName,
+        String scientificName,
+        AnimalSex sex,
+        String trackingDeviceCode,
+        String caseCode,
+        RescueStatus rescueStatus
+) {
 }
